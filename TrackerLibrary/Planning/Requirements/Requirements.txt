@@ -1,0 +1,62 @@
+						--- Requirements ---
+1. Tracks games played and their outcome ( who won)
+2. Multiple competitors paly in the tournament.
+3. Create a tournament plan ( who plays in what order).
+4. Schedule games.
+5. A single loss eliminates a player.
+6. The last player standing is the winner.
+
+		                --- Questions ---
+1Q. How many players will the tournament handle? Is it a variable?
+1A. The application should be able to handle a variable number of players in a tournament. 
+
+2Q. If a tournament has less than the full complement of players, how do we handle it?( if there a odd number of players, i.e 3,5,7, etc)
+2A. A tournament with less than the perfect number ( a multiple of 2, so 4,8,16,32, etc) should add in "byes". basically, certain people selected at random get to skip the first round and act as if they won.
+
+3Q. Should the ordering of who plays each other be random or ordrered by input order?
+3A. The ordering of the tournament should be random.
+
+4Q. Should we schedule the game or are they just played whenever? ( i.e, are they palying just right away one game is over, or lets different days)
+4A. The games should be played in whatever order and whenever the players want to play them.
+
+5Q. If the games are scheduled, how does the system know when to schedule games for?
+5A. The games are not scheduled.
+
+						--- More questions ---
+6Q. If the games are played whenever, can a game from the second round be played before the first round is complete?
+6A. No. Each round should be fully completed before the next round is displayed.
+
+7Q. Does the system need to store a score of some kind or just who won? ( perhaps keep track oft he scores for some rewards later on, etc.)?
+7A.	Storing a simple score would be nice. Just a number for each player. That way ,the tracker can be flexible enough to handle a checkers tournament(the winner would have a 1 nd the loser 0) or a basketball tournament.
+	
+8Q. What type of front-end should this system have (form, webpage, app, etc.)?
+8A. The system should be a desktop system(WinForm) for now, but down the road we might want to turn it into an app or a website.
+
+9Q. Where will the data be stored?
+9A. Ideally, the data should be stored in a Microsoft SQL database but please put in an option to store to a text file instead. Or even maybe it stores to both, as a backup.
+
+10Q. Will the system handle entry fees, prizes, or other payouts?
+10A. Yes. The tournament should have the option of charging an entry fee. Prizes should also be an option, where the tournaent adminstrator chooses how much money to award a variable number of places. The total cash amount should not exceed the income from the tournament. A percentage based system would also be nice to specify.
+						
+						--- Even more questions ---
+11Q. What type of reporting is needed? ( do we send messages after each game, what do we send, etc.)
+11A. A simple reporting specifiying the outcome of the games per round as well as a report that that specifies who won and how much they won. These can be just displayed on a form or they can be emailed to tournament competitors and the admin.
+
+12Q. Who can fill in the results of a game? (does Admin do everything, does the game players report themselves, etc.)
+12A. Anyone using the application should be able to fill in the game scores. 
+
+13Q. Are there different levels of access? (read-only view, who will be the Admin, etc)
+13A. No. The only method of varied access is if the competitors are not allowed into the application and instead, they do everything via email.
+  
+14Q. Should this system contact users about upcoming games? (how would they know when a next game is coming up).
+14A. Yes, the system should email users that they are due to play in a round as well as who they are scheduled to play.
+
+15Q. Is each player on their own or can teams use this tournament tracker? (single member team, 2,3 member team , etc).
+15A. The tournament tracker should be able to handle the addition of other members. All members should be treated as equals in that they all get tournament emails. Teams should also be able to name their team. There wont be any team captain, all the information wont go to 1 person such as the team captain.
+
+
+
+
+
+
+						

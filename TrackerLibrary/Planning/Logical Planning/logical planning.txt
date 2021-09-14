@@ -1,0 +1,15 @@
+                          --- Logical Planning ---
+						  
+	How we are going to wire out our forms.	
+
+	1/  'Create Tournament' form.
+- 'create new' button: creates a new team
+- 'Create Tournament' button.  A lot is happening here behind the scenes. We are validating the info from all of the fields in the  big box.
+	2/ 'Create Team' form.
+	3/ 'Create Prize' form. Essentially the same as 'Create Team' form w/ just the 'Add New Member' field.
+	4/ 'Tournament Dashboard' form.  'Create Tournament' button open the 'Create Tournament' form. 
+	5/ 'Tournament Viewer' form. 
+- 'Round' dropdown: will figure out how many rounds are in a Round object.
+- 'Unplayed Only' checkbox.
+- 'Score' field.
+- 'Score' button. Need to have a logic that is askingl Q: Are we in the current Round?

@@ -1,0 +1,11 @@
+1Q/ What is the best way to do this ad keep the DRY Principle?
+I dont want to reeat the same code for each Model.cs.
+Make code to be in 1 place and change easily.
+
+2Q/ How do we get that connection information?
+We need to make this Connection Global, so taht is stays alive for the Live of the program.
+We have to keep the global data in one place, and 
+-- We will use 'Static Class'.
+
+3Q/ How do we connect to 2 different Data sources for the same task?
+-- We will use Interface for Our Data sources

@@ -1,0 +1,5 @@
+							--- Big Picture Design ---
+Structure: Windows Forms application and Class Library
+Data: SQL and/or Text file.
+Users: One at a time on one application. No multiple users logged in at the same time, and no multiple levels of security.
+

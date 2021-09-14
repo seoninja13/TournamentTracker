@@ -1,0 +1,2 @@
+                                    --- Other Pieces ---
+	Not everything we can plan in advance. For items such as 'Data Access', how to email team memebers, is better to figure logic once we get into the code portion.

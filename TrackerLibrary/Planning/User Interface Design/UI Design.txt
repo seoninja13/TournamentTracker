@@ -1,0 +1,5 @@
+                                  --- UI design ---
+1/ Create the 'Tournament Viewer'.
+2/ Create the 'Create Tournament' form object.
+3/ Create the 'Add Team / Create Team' form object.
+4/ Create the "Create Prize" form object.

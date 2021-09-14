@@ -1,0 +1,43 @@
+									--- Data Design ---
+ (using Data First approach. Start with the Database design first, not the front-end)
+	
+---> Team(Class) // Would be a DB Table
+		- TeamMembers(List<Person>)
+		- TeamName (string)
+		
+---> Person(Class) // Would be a DB Table
+	- FirstName(string)
+	- LastName(string)
+	- EmailAddress(string)
+	- CellphoneNumber(string)
+	
+---> Tournament(Class) // Would be a DB Table
+	- TournamentName(string)
+	- EntryFee(decimal)
+	- EnteredTeams(List<Teams>)
+	- Prizes(List<Prize>)
+	- Rounds(List<List<Matchup>>) 
+	A match up = 1 team vs another team.
+	
+---> Prize(Class) // Would be a DB Table
+	- PlaceNumber(int)  // 1st place, second place
+	- PlaceName(string) // What is called? Champion, silver medal, bronze medal, etc.
+	- PrizeAmmount(decimal) // a Dollar value of how much the winner won
+	- PrizePercentage(double) // 0.4,0.5, etc
+	
+---> Matchup(Class) // Would be a DB Table
+	- Entries(List<MatchupEntry) // List of matchup entries
+	- Winner(Team)
+	- MatchupRound(int) // Match up for which round
+
+---> MatchupEntry(Class) // Would be a DB Table
+	- TeamCompeting(Team)
+	- Score(double)
+	- ParentMatchup(Matchup) // Where, which matchup they came from. I.e If this is Round 2 , where from Round 1 they came from.
+	
+
+
+
+
+										--- LEGEND ---
+// - comments
